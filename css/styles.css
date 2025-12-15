@@ -1,18 +1,39 @@
-/* Error: Undefined mixin.
- *   ,
- * 2 |     @include flex-center;
- *   |     ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\_header.scss 2:5  @use
- *   scss\main.scss 10:1           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502      @include flex-center;\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 2:5  @use\a   scss\\main.scss 10:1           root stylesheet";
+html {
+  line-height: 1.15;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #facc15;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(20.8928571429, 40.3928571429, 96.1071428571);
+}
+
+.home-title {
+  font-size: 14px;
+  color: #1e3a8a;
+}
+
+/*# sourceMappingURL=styles.css.map */

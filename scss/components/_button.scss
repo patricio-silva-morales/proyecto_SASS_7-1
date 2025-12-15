@@ -1,3 +1,5 @@
+@use '../utilities/variables' as *;
+
 .button{
     padding: 10px 20px;
     background-color: $primary-color;
